@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+:root {
+    --transition: ease 0.4s;
+    --colorZapote: rgb(243, 96, 11);
+    --colorZapote2: rgb(253, 118, 39);
+    --colorFooter: rgb(219, 219, 219);
+    --colorBlanco: #fff;
+    --colorNegro: #000;
+    --letraPoppins: 'Poppins', sans-serif;
+    --colorNegro2: #121112;
+    --colorNegro3: #272222;
+    --colorFusia: #D2153B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* header */
+
+header {
+    font-family: var(--letraPoppins);
+    height: 100vh;width: 100%;
+    overflow: hidden;
+}
+
+.fondo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.fondo2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+}
+
+.container__nav {
+    background: var(--colorNegro2);
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    padding: 0px 20px 0 20px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 6px 0px;
+}
+
+.logo__spans {
+    color: var(--colorZapote);
+    font-size: 37px;
+}
+
+.logo {
+    font-size: 37px;
+    color: var(--colorBlanco);
+    transition: var(--transition);
+}
+
+.logo:hover {
+    font-size: 37px;
+    color: var(--colorZapote);
+}
+
+.logo__span {
+    color: var(--colorZapote);
+    font-size: 30px;
+}
+
+/* container nav */
+
+.nav__lista {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 600px;
+    justify-content: space-between;
+}
+
+.lista__a {
+    text-decoration: none;
+    color: var(--colorBlanco);
+    font-size: 17px;
+    transition: var(--transition);
+    padding: 5px;
+}
+
+.lista__a:hover {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--colorZapote2);
+    border-bottom: 1px solid;
+}
+
+/* main */
+
+main {
+    font-family: var(--letraPoppins);
+    color: var(--colorBlanco);
+    background: var(--colorNegro2);
+    padding-top: 10px;
+}
+
+.entrenador {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.entrenador__D {
+    text-align: center;
+    display: block;
+    width: 100%;
+    color: Var(--colorNegro);
+    transition: var(--transition);
+    color: var(--colorBlanco);
+}
+
+.entrenador__D:hover {
+    color: Var(--colorZapote);
+}
+
+.entrenador__nombre {
+    width: 100%;
+    text-align: center;
+}
+
+.entrenador__nombre:hover {
+    text-align: center;
+    color: var(--colorZapote);
+}
+
+.texto {
+    Margin-right: 200px;
+    width: 650px;
+    height: 100%;
+    text-align: justify;
+}
+
+.entrenador__img {
+    margin-left: 200px;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.img__entrenador {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* horarios */
+
+.entrenos {
+    padding-top: 60px;
+}
+
+.titulo {
+    padding: 10px;
+    font-size: 30px;
+}
+
+.nav__horarios_entreno {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 60px;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 20px 60px 20px;
+}
+
+.horario {
+    list-style: none;
+}
+
+/* footer */
+
+footer {
+    height: 350px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-family: var(--letraPoppins);
+    text-align: center;
+    background: var(--colorFooter);
+}
+
+i {
+    font-size: 29px;
+    color: var(--colorNegro);
+    transition: var(--transition);
+}
+
+i:hover {
+    font-size: 30px;
+    color: var(--colorZapote);
+    cursor: pointer;
+}
+
+.Halcon {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
+.Halcon_2 {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1396px) {
+
+
+    .entrenador__img {
+        margin: auto;
+        width: 250px;
+        height: 350px;
+    }
+
+    .entrenos {
+        padding-top: 120px;
+    }
+
+    .titulo {
+        font-size: 25px;
+    }
+
+    .logo__span {
+        font-size: 24px;
+    }
+
+    .logo__span--1 {
+        font-size: 20px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1152px) {
+    .entrenador {
+        margin-top: 110px;
+    }
+
+    .texto {
+        margin: 10px 30px;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .entrenador__img {
+        margin: auto;
+        width: 250px;
+        height: 350px;
+    }
+
+    .titulo {
+        font-size: 25px;
+    }
+
+    .logo__span {
+        font-size: 24px;
+    }
+
+    .logo__span--1 {
+        font-size: 20px;
+    }
+
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .fondo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: fixed;
+        z-index: -1;
+        opacity: 0;
+    }
+    
+    .fondo2 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: fixed;
+        z-index: -1;
+        opacity: 1;
+    }
+
+    .container__nav {
+        height: auto;
+        padding: 10px 5px 10px 5px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        box-shadow: 0px 1px 6px 0px;
+    }
+
+    .nav__lista {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-grow: 1;
+    }
+
+    .lista__a {
+        font-size: 20px;
+        flex-wrap: wrap;
+    }
+
+    .entrenador {
+        margin-top: 110px;
+    }
+
+    .texto {
+        margin: 10px 30px;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .entrenador__img {
+        margin: auto;
+        width: 250px;
+        height: 350px;
+    }
+
+    .entrenos {
+        padding-top: 120px;
+    }
+
+    .titulo {
+        font-size: 25px;
+    }
+
+    .logo__span {
+        font-size: 24px;
+    }
+
+    .logo__span--1 {
+        font-size: 20px;
+    }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+    .container__nav {
+        height: auto;
+        padding: 10px 5px 10px 5px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        box-shadow: 0px 1px 6px 0px;
+    }
+
+    .nav__lista {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-grow: 1;
+    }
+
+    .lista__a {
+        font-size: 17px;
+        flex-wrap: wrap;
+    }
+
+    .entrenador {
+        margin-top: 110px;
+    }
+
+    .texto {
+        margin: 10px;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .entrenador__img {
+        margin: auto;
+        width: 250px;
+        height: 350px;
+    }
+
+    .entrenos {
+        padding-top: 120px;
+    }
+
+    .titulo {
+        font-size: 25px;
+    }
+
+    .logo__span {
+        font-size: 24px;
+    }
+
+    .nav__horarios_entreno {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo__span--1 {
+        font-size: 20px;
+    }
+}
